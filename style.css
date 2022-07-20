@@ -1,0 +1,73 @@
+body{
+    position:relative; /*全体のサイズを画面に揃える */
+    background-size: cover; /*背景色を全体に */
+    background-color:aliceblue;
+    width:100%; /*ウィンドウ目一杯色つける */
+    height:100%;
+}
+.img{
+    background-image:url("https://wide-kabegami.com/1920_nature/wallpapers/image/1920-304wallpaper.jpg");
+    width:100%;
+    height:800px;
+}
+/*ここからはbodyの基準サイズに合わせる */
+#language-button{
+     /* 上の余白*/
+    margin: 30px 20px 30px 90%;
+    border: 1px solid #333; /*太さと種類と色 */
+    padding: 8px 20px; /*ボタン内余白 */
+    background: #006C84;
+    cursor: pointer; /*マウスを乗せると指に変わる */
+}
+header{
+    padding-left:30px;
+    background-color: #006C84;
+    color:aliceblue;
+}
+.button{
+    color:aliceblue
+}
+.information{
+    display:flex;
+    justify-content:space-evenly;
+}
+.profile{
+    position:relative;
+    padding:10px;
+    background-color: #6EB5C0;
+    width:400px
+}
+.profile h3{
+    font-size: 120%;
+}
+.profile h4{
+    font-size: 200%;
+}
+.profile div{
+    margin-left: 10%;
+    font-size: 150%;
+
+}
+
+#profile-button{
+    position:absolute;
+    margin-top:0;
+    margin-left:70%;
+    border: 1px solid aliceblue;
+    padding: 8px 20px;
+    background: #006C84;
+    cursor: pointer;
+}
+#like-button{
+    position: absolute;
+    margin-top:0;
+    margin-left:70%;
+    border: 1px solid aliceblue;
+    padding: 8px 20px;
+    background: #006C84;
+    cursor: pointer;
+}
+
+
+
+

@@ -1,5 +1,5 @@
-const me = {name:{jap:"勝本麗香",eng:"Reika Katsumoto"},living:{jap:"横浜",eng:"Yokohama"},university: { name: {jap:"上智大学",eng:"Sophia University"}, class: {jap:"三年",eng:"Three"}},hobbies: {jap:["料理", "旅行", "映画"],eng:["Cooking","Traveling","Movie"]},character:{jap:["明るい","能天気","友好的"],eng:["Cheerful","Easygoing","Friendly"]},family:{jap:"父、母、妹",eng:"father,mother,sister"}}
-const like ={food:{jap:"パイナップル",eng:"Pineapple"},color:{jap:"若草色",eng:"Light green"},animal:{jap:"パンダ",eng:"Panda"}}
+const me = {name:{jap:"勝本麗香",eng:"Reika Katsumoto"},living:{jap:"横浜",eng:"Yokohama"},university: { name: {jap:"上智大学",eng:"Sophia University"}, class: {jap:"三年",eng:"Three"}},hobbies: {jap:["料理", "旅行","ネイル"],eng:["Cooking","Traveling","Nails"]},character:{jap:["明るい","親しみやすい"],eng:["Cheerful","Friendly"]},family:{jap:"父、母、妹",eng:"father,mother,sister"}}
+const like ={food:{jap:"パイナップル",eng:"Pineapple"},color:{jap:"若草色",eng:"Light green"},animal:{jap:"パンダ",eng:"Panda"},youtuber:"JunsKitchen"}
 
 let mainTitle = document.getElementById("maintitle")
 let subTitle =document.getElementById("subtitle")
@@ -29,20 +29,22 @@ let animal = document.getElementById("animal")
 let foodAnswer = document.getElementById("food-answer")
 let colorAnswer = document.getElementById("color-answer")
 let animalAnswer = document.getElementById("animal-answer")
+let youtuber = document.getElementById("youtuber")
+let youtuberAnswer = document.getElementById("youtuber-answer")
 
 profileButton.onclick = function(){
       myNameAnswer.textContent=me.name.jap
       livingEreaAnswer.textContent=me.living.jap
       schoolYearAnswer.textContent=me.university.class.jap
       schoolNameAnswer.textContent=me.university.name.jap
-      myCharacteAnswer.textContent=me.character.jap
-      myHobbyAnswer.textContent=me.hobbies.jap
       myFamilyAnswer.textContent=me.family.jap
     }
 likeButton.onclick = function(){
   foodAnswer.textContent = like.food.jap
   colorAnswer.textContent = like.color.jap
   animalAnswer.textContent = like.animal.jap
+  youtuberAnswer.textContent = like.youtuber
+  
 }
 
 languageButton.onclick = function () {
@@ -60,22 +62,21 @@ languageButton.onclick = function () {
   livingErea.textContent="Living in"
   schoolYear.textContent="Grade"
   schoolName.textContent="School"
-  myCharacter.textContent="Personality"
-  myHobby.textContent="Hobbies"
   myFamily.textContent="Family"
   myNameAnswer.textContent=me.name.eng
   livingEreaAnswer.textContent=me.living.eng
   schoolYearAnswer.textContent=me.university.class.eng
   schoolNameAnswer.textContent=me.university.name.eng
-  myCharacteAnswer.textContent=me.character.eng
-  myHobbyAnswer.textContent=me.hobbies.eng
   myFamilyAnswer.textContent = me.family.eng
   food.textContent = "Food"
   color.textContent = "Color"
   animal.textContent = "Animal"
+  youtuber.textContent = "Youtuber"
   foodAnswer.textContent = like.food.eng
   colorAnswer.textContent = like.color.eng
   animalAnswer.textContent = like.animal.eng
+  youtuberAnswer.textContent = like.youtuber
+  
   } else{
   languageButton.textContent="日本語"
 
@@ -90,21 +91,19 @@ languageButton.onclick = function () {
   livingErea.textContent="所在"
   schoolYear.textContent="学年"
   schoolName.textContent="大学"
-  myCharacter.textContent="性格"
-  myHobby.textContent="趣味"
   myFamily.textContent="家族"
   myNameAnswer.textContent=me.name.jap
   livingEreaAnswer.textContent=me.living.jap
   schoolYearAnswer.textContent=me.university.class.jap
   schoolNameAnswer.textContent=me.university.name.jap
-  myCharacteAnswer.textContent=me.character.jap
-  myHobbyAnswer.textContent=me.hobbies.jap
   myFamilyAnswer.textContent=me.family.jap
   food.textContent = "食べ物"
   color.textContent = "色"
   animal.textContent = "動物"
+  youtuber.textContent = "ユーチューバー"
   foodAnswer.textContent = like.food.jap
   colorAnswer.textContent = like.color.jap
   animalAnswer.textContent = like.animal.jap
+  youyuberAnswer.textContent = like.youtuber
   }
 }

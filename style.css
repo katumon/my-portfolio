@@ -4,25 +4,38 @@ body{
     background-color:aliceblue;
     width:100%; /*ウィンドウ目一杯色つける */
     height:100%;
+    font-family:sans-serif;
 }
-.img{
+.img1{
     background-image:url("https://wide-kabegami.com/1920_nature/wallpapers/image/1920-304wallpaper.jpg");
     width:100%;
     height:800px;
 }
+
 /*ここからはbodyの基準サイズに合わせる */
+
 #language-button{
      /* 上の余白*/
-    margin: 30px 20px 30px 90%;
+    margin: 30px 20px 20px 90%;
     border: 1px solid #333; /*太さと種類と色 */
     padding: 8px 20px; /*ボタン内余白 */
     background: #006C84;
     cursor: pointer; /*マウスを乗せると指に変わる */
 }
 header{
-    padding-left:30px;
+    padding-left:50px;
     background-color: #006C84;
     color:aliceblue;
+}
+.sub{
+    font-size: 38px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left:40px ;
+    margin-right: 75%;
+    padding-left: 50px;
+    padding-bottom: 12px;
+    border-bottom: 5px solid #333;
 }
 .button{
     color:aliceblue
@@ -33,19 +46,21 @@ header{
 }
 .profile{
     position:relative;
+    margin-bottom: 100px;
     padding:10px;
     background-color: #6EB5C0;
-    width:400px
+    width:500px
 }
 .profile h3{
-    font-size: 120%;
+    font-size: 100%;
 }
 .profile h4{
-    font-size: 200%;
+    padding:30px;
+    font-size: 170%;
 }
 .profile div{
     margin-left: 10%;
-    font-size: 150%;
+    font-size: 130%;
 
 }
 
@@ -66,6 +81,54 @@ header{
     padding: 8px 20px;
     background: #006C84;
     cursor: pointer;
+}
+.more-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*中央揃え*/
+    flex-wrap: wrap; /*画面からはみ出たら折り返す*/
+    padding:7%;
+}
+
+.more-parent:nth-child(even) {
+    flex-direction: row-reverse; /*レイアウトの順番を変える*/
+  }
+.img2{
+    width:48%;
+    height:auto;
+}
+.more-baby{
+    font-size: 30px;
+    background-color:#6EB5C0 ;
+    width:38%;
+    height:35%;
+    padding:30px;
+}
+
+.add-parent{
+    position:relative;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+}
+
+.img3{
+    max-width:100%;
+    height:200px;
+}
+.add-baby{
+    position:relative;
+    text-align:center;
+    margin-bottom: 100px;
+    background-color: #6EB5C0;
+    width:300px
+}
+footer{
+    padding: 23px 50%;
+    background-color: #006C84;
+    color:aliceblue;
+    font-family:fantasy;
+    font-size: 30px;
 }
 
 

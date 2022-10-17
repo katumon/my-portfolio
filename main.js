@@ -129,3 +129,4 @@ languageButton.onclick = function () {
   moreCon2.textContent = more.hobby.jap
   }
 }
+
